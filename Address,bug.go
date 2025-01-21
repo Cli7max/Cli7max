@@ -18,4 +18,5 @@ func TestHardcodedAddressBug(addr string, hardcodedAddress string) {
 func main() {
 	TestHardcodedAddressBug("cosmos1exampleaccount", "cosmos1hardcodedaddress")
 }
+// Bug Detected: Expected query for address cosmos1exampleaccount, but queried hardcoded address cosmos1hardcodedaddress
 
