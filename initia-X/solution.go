@@ -1,3 +1,11 @@
+package main
+
+import (
+	"fmt"
+	"cosmossdk.io/math"
+	"cosmossdk.io/math/legacy"
+	"github.com/cosmos/cosmos-sdk/types/math/legacy"
+)
 func (k TestAnteKeeper) GetBaseSpotPrice(denomQuote string) (math.LegacyDec, error) {
 	balances, found := k.pools[denomQuote]
 	if !found {
